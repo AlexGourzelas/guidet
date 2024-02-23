@@ -169,7 +169,7 @@ class AttributionDialog extends StatelessWidget {
         for (var attrib in _attributions)
           InkWell(
             onTap: () {
-              await launchUrl(attrib.uri, mode: LaunchMode.externalApplication);
+              launchUrl(attrib.uri, mode: LaunchMode.externalApplication);
             },
             child: SimpleDialogOption(
               padding: const EdgeInsets.symmetric(
