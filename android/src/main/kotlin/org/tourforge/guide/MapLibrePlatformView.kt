@@ -1,4 +1,4 @@
-package org.opentourbuilder.guide
+package org.tourforge.guide
 
 import android.content.Context
 import android.view.View
@@ -28,7 +28,7 @@ class MapLibrePlatformView(
     messenger: BinaryMessenger
 ) : PlatformView {
     private val mapView: MapView
-    private val channel = MethodChannel(messenger, "opentourbuilder.org/guide/map")
+    private val channel = MethodChannel(messenger, "tourforge.org/guide/map")
     private lateinit var locationSource: GeoJsonSource
     private var map: MapboxMap? = null
 
@@ -138,8 +138,8 @@ class MapLibrePlatformView(
             val cameraPosition = map.cameraPosition
             channel.invokeMethod(
                 "updateCameraPosition", mapOf(
-                    "lat" to cameraPosition.target.latitude,
-                    "lng" to cameraPosition.target.longitude,
+                    "lat" to cameraPosition.target?.latitude,
+                    "lng" to cameraPosition.target?.longitude,
                     "zoom" to cameraPosition.zoom + 1,
                 )
             )
@@ -178,7 +178,7 @@ class MapLibrePlatformView(
         when (call.method) {
             "updateLocation" -> {
                 locationGeoJson = call.arguments as String
-                locationSource.setGeoJson(locationGeoJson)
+                locationSource.setGeoJson(locationGeoJson!!)
                 result.success(null)
             }
             "moveCamera" -> {
