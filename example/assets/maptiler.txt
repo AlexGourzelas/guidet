@@ -1,1 +1,1 @@
-MAPTILER_KEY = "NnEPX8YOx6hVoOePhoPm"
+MAPTILER_KEY = "6cHE2v5GTmApkjkpymoH"
