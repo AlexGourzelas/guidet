@@ -158,6 +158,7 @@ class _MapLibreMapState extends State<MapLibreMap> {
           await assetBundle.loadString('$assetPrefix/assets/style.json');
       var satStyleText = await assetBundle
           .loadString('$assetPrefix/assets/style-satellite.json');
+      var key = await assetBundle.loadString('assets/maptiler.txt');
       var tomtomKey = "";
       try {
         tomtomKey = (await assetBundle.loadString('assets/tomtom.txt')).trim();
