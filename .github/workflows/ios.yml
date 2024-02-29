@@ -40,4 +40,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: app
-        path: example/build/app/outputs/flutter-apk/app-release.app
+        path: /Users/runner/work/guidet/guidet/example/build/ios/iphoneos/Runner.app
