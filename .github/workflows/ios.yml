@@ -36,3 +36,8 @@ jobs:
       working-directory: ./example/ios
     - run: flutter build ios --release --no-codesign
       working-directory: ./example
+    - name: Upload APP artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: app
+        path: example/build/app/outputs/flutter-apk/app-release.app
