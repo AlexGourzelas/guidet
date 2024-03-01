@@ -19,13 +19,12 @@ dependencies:
     sdk: flutter
 
   tourforge:
-    git: https://github.com/AlexGourzelas/guidet.git
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
-
+    git: https://github.com/tourforge/guide.git
+  path_provider: ^2.0.13
+  path: ^1.8.2
+  url_launcher: ^6.1.12
   google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
