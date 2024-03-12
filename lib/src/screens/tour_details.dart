@@ -163,7 +163,7 @@ class _TourHelpScreenState extends State<_TourHelpScreen> {
         HelpSlide(
           children: [
             Text(
-              "Viewing a Tour",
+              "Discover a Tour",
               style: Theme.of(context).textTheme.headlineSmall,
               textAlign: TextAlign.center,
             ),
@@ -231,8 +231,8 @@ class TourNotDownloadedWarning extends StatelessWidget {
           ),
           const SizedBox(height: 6.0),
           Text(
-            "You can view information about this tour before downloading it, but "
-            "the tour must be fully downloaded before use.",
+            "View information about this tour before downloading it."
+            "The tour must be fully downloaded before use.",
             style: Theme.of(context)
                 .textTheme
                 .bodyLarge!
