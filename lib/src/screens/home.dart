@@ -70,8 +70,8 @@ class _HomeState extends State<Home> {
                   ),
                   const SizedBox(height: 4.0),
                   Text(
-                    "Below, you will find a list containing the tours currently available "
-                    "in ${tourForgeConfig.appName}. Try tapping on one to take a look!",
+                    "Below, you will find a list containing available tours "
+                    "in ${tourForgeConfig.appName}. Tap on one to take a look!",
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],
