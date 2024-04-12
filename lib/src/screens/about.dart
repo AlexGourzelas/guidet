@@ -55,7 +55,8 @@ class About extends StatelessWidget {
                   ),
                   child: Text(
                       "We thank the authors of the following libraries for generously "
-                      "making their work available under an open source license:",
+                      "making their work available under an open source license:"
+                      "http://www.grecoapp.com/2023/06/16/osl_credits/",
                       style: Theme.of(context).textTheme.bodyLarge),
                 ),
                 const SizedBox(height: 12.0),
