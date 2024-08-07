@@ -70,7 +70,7 @@ class _HomeState extends State<Home> {
                   ),
                   const SizedBox(height: 4.0),
                   Text(
-                    "Below, you will find a list containing available tours "
+                    "Below, you will find a list containing available tours in Greco"
                     "in ${tourForgeConfig.appName}. Tap on one to take a look!",
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
