@@ -65,12 +65,12 @@ class _HomeState extends State<Home> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Tours",
+                    "Greco Tours",
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   const SizedBox(height: 4.0),
                   Text(
-                    "Below, you will find a list containing available tours in Greco"
+                    "Greco is your personal tour guide. Enjoy our narrated tours as you drive! Below, you will find a list containing available tours "
                     "in ${tourForgeConfig.appName}. Tap on one to take a look!",
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
