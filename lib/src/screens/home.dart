@@ -38,6 +38,8 @@ class _HomeState extends State<Home> {
             elevation: 1.0,
             itemBuilder: (_) => [
               const PopupMenuItem(
+                value: "Info",
+                child: Text("Info"),
                 value: "About",
                 child: Text("About"),
               ),
