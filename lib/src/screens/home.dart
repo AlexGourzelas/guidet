@@ -222,7 +222,7 @@ class _TourListItemState extends State<_TourListItem> {
                       color: Color.fromARGB(255, 160, 160, 160),
                     ),
                     Text(
-                      "tour?.waypoints.length ?? 0",
+                      "18 Stops",
                       style: Theme.of(context).textTheme.labelMedium!.copyWith(
                           color: const Color.fromARGB(255, 160, 160, 160)),
                     ),
